@@ -3,10 +3,9 @@ import parser.tokenizer as tk
 
 def main():
     print("\tELIZA LIKE CHATBOT\n")
-    print("Enter exit at any time to quit the program")
-
+    print("Enter exit at any time to quit the program\n")
     while(1):
-        user_input = raw_input("\n>>")
+        user_input = raw_input(">>")
         tokens = tk.word_tokenize(user_input)
 
         if 'EXIT' in tokens or 'exit' in tokens:
